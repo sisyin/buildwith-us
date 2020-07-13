@@ -1,3 +1,4 @@
+// fungsi untuk animation form sign up dan sign in
 $(function() {
 	$(".btn").click(function() {
 		$(".form-signin").toggleClass("form-signin-left");
