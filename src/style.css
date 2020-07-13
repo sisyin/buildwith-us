@@ -1,0 +1,97 @@
+@tailwind base;
+
+@font-face {
+    font-family: 'Merriweather', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+}
+
+@tailwind components;
+
+.overlay-bg {
+    @apply opacity-0 top-0 absolute bg-indigo-900 bg-opacity-75 w-full h-64 flex items-center justify-center;
+}
+
+.card:hover .overlay-bg {
+    @apply opacity-100 rounded-t-lg transition duration-700 ease-in-out;
+}
+
+@tailwind utilities;
+
+body {
+    color: #fff;
+    text-align: left;
+}
+
+/* bg-home */
+.bg-home {
+    height: 710px; 
+    width: 100%;
+    background-color: #0f0e20;
+}
+
+.bg-home-kelas {
+    height: 650px; 
+    width: 100%;
+    background-color: #0f0e20;
+}
+
+.navbar {
+    padding: 30px 16px;
+}
+
+.link-page {
+    padding: 8px 20px;
+}
+.link-page-btn {
+    padding: 8px 20px;
+    color: #8481AB;
+    background-color: #232335;
+}
+
+#link:target {
+    color: #ff915f; 
+    outline: none;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 205px;
+    /* min-width: auto;
+    min-height: auto; */
+    width: 1140px;
+}
+
+main .container-index {
+    margin-top: 50px;
+}
+
+.link-page:hover {
+    opacity: 0.5;
+}
+.link-page-btn:hover {
+    opacity: 0.5;
+    transition: all;
+    transition-duration: 200;
+    color: #fff;
+}
+
+main h1{
+    font-weight: 600;
+    letter-spacing: 0.2;
+}
+
+main p {
+    color: #8481AB;
+}
+
+.hero {
+    height: 400px;
+}
+
+
+

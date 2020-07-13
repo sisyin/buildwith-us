@@ -1,0 +1,26 @@
+{
+  "name": "bwu",
+  "version": "1.0.0",
+  "description": "course-online",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss build src/style.css -o dist/styles.css",
+    "watch:tailwind": "nodemon --watch src/style.css -x \"npm run build:css\"",
+    "serve": "npm run watch:tailwind",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahibul-nf/build-with-us.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahibul-nf/build-with-us/issues"
+  },
+  "homepage": "https://github.com/sahibul-nf/build-with-us#readme",
+  "dependencies": {
+    "nodemon": "^2.0.4",
+    "tailwindcss": "^1.4.6"
+  }
+}
